@@ -1,12 +1,12 @@
 const events = [
-    { title: "Music Fest", date: "2024-12-28", location: "Mech Gallery", description: "An evening of live music.", category: "music",image:"music.jpg"  },
-    { title: "Football Match", date: "2025-01-15", location: "Ground", description: "Exciting football game.", category: "sports",image:"football.jpg"  },
-    { title: "Coding Workshop", date: "2025-02-10", location: "COding gives wisdom", description: "Learn coding in a day.", category: "education",image:"coding.jpg"  },
-    { title: "Ideathon", date: "2024-12-28", location: "MCA Lab", description: "Structured presentation of research.", category: "education",image:"paper.jpg"  },
-    { title: "Treasure Hunt", date: "2025-01-15", location: "A game find of hidden items", description: "Exciting football game.", category: "sports",image:"treasure.jpg"  },
-    { title: "Dance", date: "2024-12-28", location: "Mech Gallery", description: "A rhythmyc moment to music", category: "music",image:"dance.jpg"  },
-    { title: "PosterPresentation", date: "2025-01-15", location: "'pg-1020,1010", description: "Visible display reasercgh items ", category: "education",image:"poster.jpg"  },
-    { title: "Technical Quiz", date: "2025-02-10", location: "CIVIL galery", description: "A competitive technical Quiz", category: "education",image:"quiz.jpg"  },
+    { title: "Music Fest", date: "2024-12-28", location: "Mech Gallery", description: "An evening of live music.", category: "music",image:"music.jpg" },
+    { title: "Football Match", date: "2025-01-15", location: "Ground", description: "Exciting football game.", category: "sports",image:"football.jpg" },
+    { title: "Coding Workshop", date: "2025-02-10", location: "COding gives wisdom", description: "Learn coding in a day.", category: "education",image:"coding.jpg" },
+    { title: "Ideathon", date: "2024-12-28", location: "MCA Lab", description: "Structured presentation of research.", category: "education",image:"paper.jpg" },
+    { title: "Treasure Hunt", date: "2025-01-15", location: "A game find of hidden items", description: "Exciting football game.", category: "sports",image:"treasure.jpg" },
+    { title: "Dance", date: "2024-12-28", location: "Mech Gallery", description: "A rhythmyc moment to music", category: "music",image:"dance.jpg" },
+    { title: "PosterPresentation", date: "2025-01-15", location: "'pg-1020,1010", description: "Visible display reasercgh items ", category: "education",image:"poster.jpg" },
+    { title: "Technical Quiz", date: "2025-02-10", location: "CIVIL galery", description: "A competitive technical Quiz", category: "education",image:"quiz.jpg" }
 ];
 
 // Function to display events
