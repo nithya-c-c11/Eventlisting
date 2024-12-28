@@ -316,4 +316,18 @@ header h1 {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-listing {
+        grid-template-columns: 1fr;
+    }
+
 }
