@@ -120,7 +120,7 @@ body.light-mode {
 }
 
 body.light-mode header, .event-item {
-    background-color: #444;
+    background-color: pink;
 }
 
 body.light-mode .event-item {
