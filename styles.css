@@ -329,5 +329,18 @@ header h1 {
     .event-listing {
         grid-template-columns: 1fr;
     }
+    .category-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .event-listing {
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
