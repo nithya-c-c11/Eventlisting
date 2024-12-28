@@ -1,0 +1,319 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.category-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    background-color: pink;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #ddd;
+}
+
+.event-listing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.event-item {
+    background-color:pink;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-item:hover {
+    transform: scale(1.05);
+}
+
+.event-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.event-item h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.event-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button.register-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button.register-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-listing {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-listing {
+        grid-template-columns: 1fr;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+}
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode header, .event-item {
+    background-color: #444;
+}
+
+body.dark-mode .event-item {
+    color: #fff;
+}
+
+body.dark-mode .category {
+    background-color: #555;
+}
+
+body.dark-mode .register-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .register-btn:hover {
+    background-color: #444;
+}
+.event-image {
+    width: 100px; /* Image will take up 50% of the container width */
+    height: 100px; /* Maintain aspect ratio */
+    margin-top: 10px;
+    display: block;
+    margin-right:20px;
+    margin-right: auto;
+}
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#back-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#back-button:hover {
+    background-color: #d32f2f;
+}
+
+#event-detail {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-detail-content {
+    text-align: center;
+}
+
+.event-detail-image {
+    width: 100%;  /* Image will take full width of container */
+    max-width: 500px;  /* Limit image width */
+    height: auto;
+    margin-top: 20px;
+}
+Final Structure:
+The page will now load event details dynamically from localStorage and display them in a clean, organized format.
+The back button allows users to return to the event listings.
+This will provide a smooth user experience for displaying event details and navigating back to the main list.
+
+
+You said:
+css for above code
+ChatGPT said:
+ChatGPT
+Here's a CSS code to style the event-details.html page based on the structure provided. This CSS will ensure that the page looks clean, organized, and user-friendly while displaying the event details.
+
+CSS Code (styles.css):
+css
+Copy code
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Back Button Styles */
+#back-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+#back-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Event Detail Container Styles */
+#event-detail {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Event Detail Content Styling */
+.event-detail-content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Event Title Styling */
+.event-detail-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Event Description Styling */
+.event-detail-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Event Image Styling */
+.event-detail-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Back Button Section */
+#back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#back-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Media Query for Small Screens (Responsive Design) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .event-detail-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .event-detail-content p {
+        font-size: 1rem;
+    }
+
+    .event-detail-image {
+        max-width: 100%;
+    }
+
+    #back-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
