@@ -114,16 +114,16 @@ button.register-btn:hover {
         width: 100%;
     }
 }
-body.dark-mode {
-    background-color: #333;
+body.light-mode {
+    background-color:pink;
     color: #fff;
 }
 
-body.dark-mode header, .event-item {
+body.light-mode header, .event-item {
     background-color: #444;
 }
 
-body.dark-mode .event-item {
+body.light-mode .event-item {
     color: #fff;
 }
 
